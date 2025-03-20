@@ -23,6 +23,17 @@
             z-index: 99999;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .navbar-toggler{
+            border: unset;
+            margin: 0;
+            padding: 0;
+            text-decoration: unset;
+        }
+        .navbar-toggler:focus{
+            outline: none;
+            box-shadow: none;
+
+        }
 
         .navbar-nav .nav-link {
             color: black;
@@ -39,7 +50,20 @@
             border-radius: 20px;
             padding: 5px 15px;
         }
-
+        .login-btm{
+            border: 2px solid #1698b7;
+            border-radius: 20px;
+            width: 100%;
+            padding: 5px 20px;
+            text-align: center;
+        }
+        .signup-btm{
+            background-color: #1698b7;
+            color: #fff;
+            border-radius: 20px;
+            width: 100%;
+            padding: 5px 20px;
+        }
         .btn-signup:hover {
             background-color: #1698b7;
         }
@@ -144,10 +168,12 @@
             </a>
 
             <!-- Toggle button for mobile view -->
+             <div class="d-flex gap-3">
+            <a href="https://www.syncspace.com/" class="btn btn-signup d-block d-lg-none">Sign up</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+        </div>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
@@ -187,7 +213,19 @@
                 </ul>
 
                 <!-- Right Side -->
-                <div class="d-flex align-items-center gap-3">
+                <div class="my-2  align-items-center justify-content-center gap-3 d-flex d-lg-none">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="nav-link d-flex align-items-center"><i class='bx bx-grid-alt' style="width: 20px; height: auto;"></i>Explore apps</a>
+                        <a href="#" class="nav-link">Contact sales</a>
+                    </div> 
+                </div>
+
+                <div class="align-items-center flex-column gap-2 justify-content-center d-flex d-lg-none">
+                    <a href="https://www.syncspace.com/" class="nav-link login-btm">Log in</a>
+                    <a href="https://www.syncspace.com/" class="btn btn-signup signup-btm">Sign up</a>
+                </div>
+
+                <div class="  align-items-center gap-3 d-none d-lg-flex">
                     <a href="#" class="nav-link d-flex align-items-center"><i class='bx bx-grid-alt' style="width: 20px; height: auto;"></i>Explore apps</a>
                     <a href="#" class="nav-link">Contact sales</a>
                     <a href="https://www.syncspace.com/" class="nav-link">Log in</a>
