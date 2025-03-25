@@ -14,6 +14,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
      <!-- Swiper CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css">
@@ -151,7 +153,7 @@
         <div class="row align-items-center hero-section">
             <div class="col-md-6">
                 <!-- <span class="badge bg-light text-dark p-2">New Zapier Enterprise is here →</span> -->
-                <h1 class="hero-title mt-3">Automate <br> without limits</h1>
+                 <h1 class="hero-title mt-3">Automate <br> without limits</h1>
                 <p class="hero-subtitle">
                     Turn chaos into smooth operations by automating workflows yourself—no developers, no IT tickets, no delays. The only limit is your imagination.
                 </p>
@@ -257,6 +259,325 @@
         </div>
     </section>
      
+    <!-- ============================== -->
+    <section class="template-section">
+      <div class="container">
+          <h1 class="section-title">Get started right now with our library of templates</h1>
+          <p class="section-subtitle">No need to start from scratch. Get a head start on building your perfect workflow and experience the magic of automation in minutes.</p>
+          
+          <div class="tab-container">
+              <span class="tab-label">Show:</span>
+              <button class="tab-btn active" data-tab="ai">AI automation</button>
+              <button class="tab-btn" data-tab="lead">Lead management</button>
+              <button class="tab-btn" data-tab="sales">Sales</button>
+              <button class="tab-btn" data-tab="marketing">Marketing</button>
+              <button class="tab-btn" data-tab="support">Support</button>
+              <button class="tab-btn" data-tab="finance">Finance</button>
+              <button class="tab-btn" data-tab="hr">HR</button>
+          </div>
+          
+          <!-- AI Automation Tab Content -->
+          <div class="tab-content active" id="ai-tab">
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Email Integration</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon gmail-icon">
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" width="20">
+                                      </div>
+                                      <strong>1. New Email in Gmail</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Triggers when you receive a new email in Gmail</small>
+                                  </div>
+                              </div>
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon chatgpt-icon">
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" width="20">
+                                      </div>
+                                      <strong>2. Conversation in ChatGPT</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Processes email content with ChatGPT</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Document Analysis</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="sales-summary">
+                                  <h6>AI Document Summary</h6>
+                                  <p class="mb-1">Date: June 11</p>
+                                  <p class="mb-1">Document: Financial Report</p>
+                                  <p class="mb-1">Pages: 24</p>
+                                  <p class="mb-0">Key insights automatically extracted and summarized</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">AI Chatbot</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="mb-3">
+                                  <strong>AISupportBot</strong>
+                              </div>
+                              <div class="chat-bubble">
+                                  <p class="mb-1">Hi! How can I help you today?</p>
+                                  <small class="text-muted">This is an automated chatbot response. <a href="#">Learn more</a></small>
+                              </div>
+                              <div class="chat-bubble">
+                                  <p class="mb-0">I'm looking to sign up for an account. Which plan should I choose?</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Lead Management Tab Content -->
+          <div class="tab-content" id="lead-tab">
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Lead Capture</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-user-plus"></i>
+                                      </div>
+                                      <strong>Form Submission</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Capture leads from website forms</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Lead Scoring</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-chart-line"></i>
+                                      </div>
+                                      <strong>Automated Scoring</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Score leads based on behavior and demographics</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Lead Nurturing</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-envelope"></i>
+                                      </div>
+                                      <strong>Email Sequence</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Automated email sequences for lead nurturing</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Sales Tab Content -->
+          <div class="tab-content" id="sales-tab">
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Sales Call Summary</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="sales-summary">
+                                  <h6>Sales Call Summary</h6>
+                                  <p class="mb-1">Date: June 11</p>
+                                  <p class="mb-1">Sales Rep: Raveena Smith</p>
+                                  <p class="mb-0">Client: John Dot</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Quote Generator</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-file-invoice-dollar"></i>
+                                      </div>
+                                      <strong>Automated Quotes</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Generate professional quotes in seconds</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Deal Tracker</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-handshake"></i>
+                                      </div>
+                                      <strong>Pipeline Management</strong>
+                                  </div>
+                                  <div class="template-details">
+                                      <small class="text-muted">Track deals through your sales pipeline</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Marketing Tab Content -->
+          <div class="tab-content" id="marketing-tab">
+              <!-- Marketing content here -->
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Campaign Manager</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-bullhorn"></i>
+                                      </div>
+                                      <strong>Multi-channel Campaigns</strong>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add more marketing cards as needed -->
+              </div>
+          </div>
+          
+          <!-- Support Tab Content -->
+          <div class="tab-content" id="support-tab">
+              <!-- Support content here -->
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Ticket Management</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-ticket-alt"></i>
+                                      </div>
+                                      <strong>Support Ticket Workflow</strong>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add more support cards as needed -->
+              </div>
+          </div>
+          
+          <!-- Finance Tab Content -->
+          <div class="tab-content" id="finance-tab">
+              <!-- Finance content here -->
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Invoice Processing</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-file-invoice"></i>
+                                      </div>
+                                      <strong>Automated Invoicing</strong>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add more finance cards as needed -->
+              </div>
+          </div>
+          
+          <!-- HR Tab Content -->
+          <div class="tab-content" id="hr-tab">
+              <!-- HR content here -->
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="template-card">
+                          <div class="card-header">
+                              <h5 class="mb-0">Onboarding</h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="template-item">
+                                  <div class="d-flex align-items-center mb-2">
+                                      <div class="template-icon">
+                                          <i class="fas fa-user-plus"></i>
+                                      </div>
+                                      <strong>Employee Onboarding</strong>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add more HR cards as needed -->
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- ============================== -->
 
     <footer class="footer">
       <div class="container">
@@ -266,7 +587,7 @@
               <li>
                 <a href="./cancellation&refund.html">Cancellation and Refund</a>
               </li>
-              <li><a href="./index.html">Privacy Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -419,5 +740,29 @@
             }
         });
     </script>
+     <script>
+      // Tab functionality
+      document.addEventListener('DOMContentLoaded', function() {
+          const tabButtons = document.querySelectorAll('.tab-btn');
+          const tabContents = document.querySelectorAll('.tab-content');
+          
+          tabButtons.forEach(button => {
+              button.addEventListener('click', function() {
+                  // Remove active class from all buttons
+                  tabButtons.forEach(btn => btn.classList.remove('active'));
+                  
+                  // Add active class to clicked button
+                  this.classList.add('active');
+                  
+                  // Hide all tab contents
+                  tabContents.forEach(content => content.classList.remove('active'));
+                  
+                  // Show the corresponding tab content
+                  const tabId = this.getAttribute('data-tab') + '-tab';
+                  document.getElementById(tabId).classList.add('active');
+              });
+          });
+      });
+  </script>
 </body>
 </html>
