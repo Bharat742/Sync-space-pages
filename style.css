@@ -251,8 +251,8 @@ body {
     width: 100%;
     overflow: hidden;
     margin-top: 60px;
-    padding: 20px 30px;
-/*     padding-top: 30px; */
+    padding: 20px 20px;
+    padding-top: 30px;
 }
 
 .card-image img {
@@ -306,6 +306,8 @@ body {
     right: 0;
     background: linear-gradient(to left, white 10%, transparent 100%);
   }
+
+
 
   /* ========tabing Style=========== */
   body {
@@ -389,7 +391,7 @@ body {
 }
 
 .card-body {
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #f8f9fa;
 }
 
@@ -443,4 +445,65 @@ body {
     padding: 15px;
     margin-bottom: 10px;
     position: relative;
+}
+/* ===================card footer css====================== */
+.card-footer {
+  padding: 25px 20px;
+  background-color: white;
+  border-top: none;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  
+}
+
+.get-started {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.get-started:hover .text {
+  text-decoration: underline;
+}
+.get-started .arrow-icon{
+  text-decoration: none !important;
+}
+ 
+
+.arrow-icon {
+  margin-left: 5px;
+  transition: transform 0.2s;
+}
+
+.get-started:hover .arrow-icon {
+  transform: translateX(3px);
+}
+
+.gmail-icon {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.chatgpt-icon {
+  background-color: #e7f7ef;
+  border-radius: 50%;
+}
+
+.check-circle {
+  color: #34a853;
+  font-size: 12px;
+  margin-right: 5px;
 }
