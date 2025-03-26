@@ -394,6 +394,7 @@ body {
 .card-body {
     /* padding: 20px; */
     background-color: #f8f9fa;
+    height:100%;
 }
 
 .template-item {
