@@ -684,6 +684,7 @@ body {
   /* background-position: right; */
   width: 100vw;
   height: 100vh;
+    background-size:contain;
 }
 
 .device-frame img {
