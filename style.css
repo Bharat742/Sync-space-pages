@@ -3,6 +3,7 @@ body {
     padding: 0;
     text-decoration: none;
   }
+   
   section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -201,7 +202,7 @@ body {
 }
 
 
-/* ============Swiper Css========= */
+/* ===============Swiper Css============= */
 .automation-section {
     padding: 60px 0;
     background-color: #fff;
@@ -309,9 +310,10 @@ body {
 
 
 
-  /* ========tabing Style=========== */
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  /* =============tabing Section Style=============== */
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 .template-section {
@@ -510,6 +512,10 @@ body {
 }
 
 /* =====================FAQ Section css========================= */
+
+.FAQ{
+  background-color: #ddd;
+}
 .faq-section {
   max-width: 900px;
   margin: 0 auto;
@@ -680,11 +686,10 @@ body {
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   background-color: white;
-  background-image: url(./images/app-home.png);
-  /* background-position: right; */
+  background-image: url(./images/app-home.png); 
   width: 100vw;
   height: 100vh;
-    background-size:contain;
+  background-size: contain;
 }
 
 .device-frame img {
@@ -715,4 +720,59 @@ body {
   .app-screenshot {
       margin-top: 40px;
   }
+}
+
+/* ==================Price Section css================== */
+
+/* .price{
+  background-color: #ddd;
+} */
+.pricing-section {
+  text-align: center;
+  color: #000;
+  /* padding: 50px 0; */
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card {
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.p-card-header{
+  background-color: #1698b7;
+}
+.p-card-header {
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+.p-card-body {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  padding: 30px;
+}
+.btn-custom {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-custom:hover {
+  background-color: rgb(26, 111, 196);
 }
