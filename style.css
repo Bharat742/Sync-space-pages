@@ -575,9 +575,13 @@ body {
   border-radius: 5px;
 }
 
+.FAQ .accordion-item .accordion-collapse.show .accordion-body{
+  border-radius: 0px 0px 5px 5px !important;
+}
 .FAQ .accordion-button:not(.collapsed) {
   color: #0a2533;
   background-color: #ddd;
+  border-radius: 5px 5px 0px 0px !important;
 }
 .FAQ .accordion-item{
   background-color: #ddd;
