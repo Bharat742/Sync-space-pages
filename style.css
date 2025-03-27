@@ -235,7 +235,9 @@ body {
     color: white;
     position: relative;
 }
-
+.swiper-pagination-bullet-active{
+  background: #1698b7 !important;
+}
 .card-title {
     position: absolute;
     top: 20px;
@@ -385,6 +387,8 @@ body {
     overflow: hidden;
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .template-card:hover {
@@ -551,14 +555,16 @@ body {
   text-decoration: underline;
 }
 
-.accordion-item {
+.FAQ .accordion-item {
   border: 1px solid #e0e0e0;
   border-radius: 8px !important;
   margin-bottom: 15px;
   overflow: hidden;
+  border: 1px solid #000;
+  padding: 0px 5px 0px 5px;
 }
 
-.accordion-button {
+.FAQ .accordion-button {
   font-weight: 500;
   font-size: 1.1rem;
   color: #0a2533;
@@ -567,23 +573,27 @@ body {
   box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed) {
+.FAQ .accordion-button:not(.collapsed) {
   color: #0a2533;
   background-color: #fff;
 }
 
-.accordion-button:focus {
+.FAQ .accordion-button:focus {
   box-shadow: none;
   border-color: #e0e0e0;
 }
 
-.accordion-body {
+.FAQ .accordion-body {
   padding: 5px 25px 25px;
   line-height: 1.6;
 }
 
+.FAQ .accordion-header{
+  border-top: 1px solid #000;
+}
+
 /* Custom plus/minus icons */
-.accordion-button::after {
+.FAQ .accordion-button::after {
   width: 24px;
   height: 24px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230a2533' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
@@ -591,7 +601,7 @@ body {
   transition: all 0.2s ease;
 }
 
-.accordion-button:not(.collapsed)::after {
+.FAQ .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230a2533' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
@@ -629,13 +639,13 @@ body {
   line-height: 1.6;
 }
 
-.accordion-item {
+.ats-section .accordion-item {
   border: none;
   background-color: transparent;
   margin-bottom: 5px;
 }
 
-.accordion-button {
+.ats-section .accordion-button {
   background-color: transparent;
   color: #333;
   font-weight: 600;
@@ -644,16 +654,16 @@ body {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.accordion-button:not(.collapsed) {
+.ats-section  .accordion-button:not(.collapsed) {
   background-color: transparent;
   color: #333;
 }
 
-.accordion-button:focus {
+.ats-section .accordion-button:focus {
   box-shadow: none;
 }
 
-.accordion-body {
+.ats-section  .accordion-body {
   padding: 15px 0;
   color: #4a4a4a;
 }
