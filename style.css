@@ -235,7 +235,9 @@ body {
     color: white;
     position: relative;
 }
-
+.swiper-pagination-bullet-active{
+  background: #1698b7 !important;
+}
 .card-title {
     position: absolute;
     top: 20px;
