@@ -572,6 +572,7 @@ body {
   background-color: #ddd;
   /* padding: 20px 25px; */
   box-shadow: none !important;
+  border-radius: 5px;
 }
 
 .FAQ .accordion-button:not(.collapsed) {
