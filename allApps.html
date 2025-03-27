@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy policy</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Box Icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* Background pattern */
+        .bg-pattern {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='smallGrid' width='10' height='10' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 10 0 L 0 0 0 10' fill='none' stroke='%23e0e0e0' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23smallGrid)'/%3E%3C/svg%3E"); */
+            /* background-image: url("https://www.vectara.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2b91b097eb379dccde97ca1b554fef30.svg&w=3840&q=75"); */
+            background-image: url("./images/background-img.svg");
+            opacity: 0.5;
+            z-index: -1;
+            background-repeat: no-repeat;
+        }
+
+        .integrations-section {
+            /* padding: 60px 0; */
+            position: relative;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #4169e1;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .page-description {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 10px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .learn-more {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .learn-more a {
+            color: #4169e1;
+            text-decoration: none;
+        }
+
+        .learn-more a:hover {
+            text-decoration: underline;
+        }
+
+        .filter-section {
+            margin-bottom: 30px;
+        }
+
+        .filter-label {
+            font-size: 0.9rem;
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .filter-select {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-width: 120px;
+        }
+
+        .integration-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            height: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .integration-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .app-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .app-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .app-description {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .tag-orchestration {
+            background-color: #ffebee;
+            color: #f44336;
+        }
+
+        .tag-lowcode {
+            background-color: #e8f5e9;
+            color: #4caf50;
+        }
+
+        .tag-ingest {
+            background-color: #e3f2fd;
+            color: #2196f3;
+        }
+
+        /* App-specific logo colors */
+        .logo-langchain {
+            background-color: #000;
+        }
+
+        .logo-llamaindex {
+            background-color: #0077b6;
+        }
+
+        .logo-flowise {
+            background-color: #5e35b1;
+        }
+
+        .logo-langflow {
+            background-color: #4caf50;
+        }
+
+        .logo-datavolo {
+            background-color: #00bcd4;
+        }
+
+        .logo-airbyte {
+            background-color: #7b1fa2;
+        }
+
+        .logo-unstructured {
+            background-color: #00bcd4;
+        }
+
+        @media (max-width: 767px) {
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .integration-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* ================= */
+        .border-box {
+    position: relative;
+    display: inline-block;
+    padding: 40px;
+  }
+
+  .border-box::before,
+  .border-box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(181deg, transparent, #D4D6DD, transparent);
+    left: 0;
+  }
+
+  .border-box::before { top: 25px; }
+  .border-box::after { bottom: 25px; }
+
+  .border-box .vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #D4D6DD, transparent);
+    top: 0;
+  }
+
+  .left-line { left: 25px; }
+  .right-line { right: 25px; }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top  ">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="./home.html">
+                <img src="https://technians.com/wp-content/uploads/2021/09/main-logo.webp" alt="logo" height="24" />
+            </a>
+
+            <!-- Toggle button for mobile view -->
+            <div class="d-flex gap-3">
+                <a href="https://www.syncspace.com/" class="btn btn-signup d-block d-lg-none">Sign up</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Product 1</a></li>
+                            <li><a class="dropdown-item" href="#">Product 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Solution 1</a></li>
+                            <li><a class="dropdown-item" href="#">Solution 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Resource 1</a></li>
+                            <li><a class="dropdown-item" href="#">Resource 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enterprise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side -->
+                <div class="my-2 align-items-center justify-content-center gap-3 d-flex d-lg-none">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="./allApps.html" class="nav-link d-flex align-items-center"><i class="bx bx-grid-alt"
+                                style="width: 20px; height: auto"></i>Explore apps</a>
+                        <a href="#" class="nav-link">Contact sales</a>
+                    </div>
+                </div>
+
+                <div class="align-items-center flex-column gap-2 justify-content-center d-flex d-lg-none">
+                    <a href="https://www.syncspace.com/" class="nav-link login-btm">Log in</a>
+                    <a href="https://www.syncspace.com/" class="btn btn-signup signup-btm">Sign up</a>
+                </div>
+
+                <div class="align-items-center gap-3 d-none d-lg-flex">
+                    <a href="./allApps.html" class="nav-link d-flex align-items-center"><i class="bx bx-grid-alt"
+                            style="width: 20px; height: auto"></i>Explore apps</a>
+                    <a href="#" class="nav-link">Contact sales</a>
+                    <a href="https://www.syncspace.com/" class="nav-link">Log in</a>
+                    <a href="https://www.syncspace.com/" class="btn btn-signup">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="bg-pattern"></div>
+
+    <section class="integrations-section">
+        <div class="container">
+            <!-- Logo and Title -->
+            <div class="logo-container">
+                <div class="logo">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 11 4.5h2.05a.5.5 0 0 1 .5.5v2.05a.5.5 0 0 1-.5.5H12v1h1.05a.5.5 0 0 1 .5.5v2.05a.5.5 0 0 1-.5.5H11v1.5a.5.5 0 0 1-1 0V11h-1v1.5a.5.5 0 0 1-1 0V11h-1v1.5a.5.5 0 0 1-1 0V11A2.5 2.5 0 0 1 4.5 8.5H2.05a.5.5 0 0 1-.5-.5V5.95a.5.5 0 0 1 .5-.5H4v-1H2.05a.5.5 0 0 1-.5-.5V2.05a.5.5 0 0 1 .5-.5H4.5A2.5 2.5 0 0 1 7 0zm4.5 5.5a.5.5 0 0 0-.5.5v1.05a.5.5 0 0 0 .5.5H11v-2zM5.5 7H4.5a.5.5 0 0 0-.5.5v1.05a.5.5 0 0 0 .5.5H5.5zm0-2H4.5a.5.5 0 0 0-.5.5v1.05a.5.5 0 0 0 .5.5H5.5z" />
+                    </svg> -->
+                    <!-- <img src="./images/app-logo.svg" alt="app-logo"> -->
+                    <div class="border-box">
+                        <div class="vertical-line left-line"></div>
+                        <div class="vertical-line right-line"></div>
+                        <img src="./images/app-logo.svg" alt="Icon" width="60">
+                      </div>
+                </div>
+            </div>
+
+            <h1 class="page-title">Apps integrations</h1>
+            <p class="page-description">Easily connect your tools and automate workflows to boost efficiency. Our integrations simplify data syncing and enhance your business operations.</p>
+
+            <div class="learn-more">
+                <a href="#">Learn about our partnerships program ›</a>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <span class="filter-label">Filter by:</span>
+                <select class="filter-select">
+                    <option>Type</option>
+                    <option>Orchestration</option>
+                    <option>Low code</option>
+                    <option>Ingest</option>
+                </select>
+            </div>
+
+            <!-- Integration Cards - Row 1 -->
+            <div class="row g-4 mb-4">
+                <!-- LangChain -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo "><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt=""></div>
+                            <div class="app-name">LangChain</div>
+                            <div class="app-description">LangChain helps build AI apps from prototype to production.
+                            </div>
+                            <div>
+                                <span class="tag tag-orchestration">Orchestration</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- llamaIndex -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo logo-llamaindex">LI</div>
+                            <div class="app-name">llamaIndex</div>
+                            <div class="app-description">Use Vectora as a Managed Index in your LlamaIndex application
+                                to take advantage of the full set of features Vectora provides.</div>
+                            <div>
+                                <span class="tag tag-orchestration">Orchestration</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Flowise -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo logo-flowise">FW</div>
+                            <div class="app-name">Flowise</div>
+                            <div class="app-description">Add RAG-as-a-service to your Flowise application through the
+                                Vectora integration.</div>
+                            <div>
+                                <span class="tag tag-lowcode">Low code</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Integration Cards - Row 2 -->
+            <div class="row g-4">
+                <!-- LangFlow -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo logo-langflow">LF</div>
+                            <div class="app-name">LangFlow</div>
+                            <div class="app-description">Add RAG-as-a-service to your LangFlow application through the
+                                Vectora integration.</div>
+                            <div>
+                                <span class="tag tag-lowcode">Low code</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- DataVolo -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo logo-datavolo">DV</div>
+                            <div class="app-name">DataVolo</div>
+                            <div class="app-description">DataVolo is powered by Apache NiFi and is designed for
+                                continuous, event-driven ingest into Vectora from any data source.</div>
+                            <div>
+                                <span class="tag tag-ingest">Ingest</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Airbyte -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo logo-airbyte">AB</div>
+                            <div class="app-name">Airbyte</div>
+                            <div class="app-description">Use Airbyte's Vectora Destination connector for easy and
+                                reliable data ingestion from over 400+ data sources into Vectora.</div>
+                            <div>
+                                <span class="tag tag-ingest">Ingest</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Integration Cards - Row 3 (Only one card shown in the image) -->
+            <div class="row g-4 mt-4">
+                <!-- Unstructured -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="./singleApp.html" class="text-decoration-none">
+                        <div class="integration-card">
+                            <div class="app-logo logo-unstructured">UN</div>
+                            <div class="app-name">Unstructured</div>
+                            <div class="app-description">Use Unstructured Ingest to transform any internal unstructured
+                                data into text and ingest into Vectora.</div>
+                            <div>
+                                <span class="tag tag-ingest">Ingest</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============Footer Section================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <ul>
+                        <li>
+                            <a href="./cancellation&refund.html">Cancellation and Refund</a>
+                        </li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <ul>
+                        <li><a href="./term&condition.html">Terms and Conditions</a></li>
+                        <li>
+                            <a href="./shipping&delivery.html">Shipping and Delivery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col-md-2 mb-4">
+                    <h5>Popular apps</h5>
+                    <ul>
+                        <li><a href="#">Dropbox</a></li>
+                        <li><a href="#">Google Sheets</a></li>
+                        <li><a href="#">DocuSign</a></li>
+                        <li><a href="#">WordPress</a></li>
+                        <li><a href="#">Office 365</a></li>
+                        <li><a href="#" class="show-more">Show more</a></li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="col-md-2 mb-4">
+                    <h5>Trending apps</h5>
+                    <ul>
+                        <li><a href="#">Twitch</a></li>
+                        <li><a href="#">Calendly</a></li>
+                        <li><a href="#">Microsoft To-Do</a></li>
+                        <li><a href="#">Microsoft Outlook</a></li>
+                        <li><a href="#">Medium</a></li>
+                        <li><a href="#" class="show-more">Show more</a></li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="col-md-3 mb-4">
+                    <h5>Top apps by category</h5>
+                    <ul>
+                        <li><a href="#">Project management</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">CRM</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#" class="show-more">Show more</a></li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="col-md-3 mb-4">
+                    <h5>Our best content</h5>
+                    <ul>
+                        <li><a href="#">Best Video Conferencing Apps</a></li>
+                        <li><a href="#">Best Email Apps</a></li>
+                        <li><a href="#">Best CRM Apps</a></li>
+                        <li><a href="#">Best Note Taking Apps</a></li>
+                        <li><a href="#">Best Calendar Apps</a></li>
+                        <li><a href="#" class="show-more">Show more</a></li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <!-- Social media section -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <span class="me-3">Follow us</span>
+                        <div class="social-icons">
+                            <a href="#"><i class="bx bxl-facebook"></i></a>
+                            <a href="#"><i class="bx bxl-linkedin"></i></a>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                            <a href="#"><i class="bx bxl-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom navigation and logo -->
+            <div class="row bottom-nav">
+                <div class="col-md-4">
+                    <img src="https://technians.com/wp-content/uploads/2021/09/main-logo.webp" alt="logo"
+                        style="width: 120px; height: auto" />
+                </div>
+                <div class="col-md-8 text-md-end">
+                    <a href="#">Pricing</a>
+                    <a href="#">Help</a>
+                    <a href="#">Developer Platform</a>
+                    <a href="#">Press</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Templates</a>
+                    <a href="#">App Integrations</a>
+                    <div class="mt-2x">
+                        <span class="copyright me-4">© 2025 Sync Space Inc.</span>
+                        <a href="#">Manage cookies</a>
+                        <a href="#" class="ms-3">Legal</a>
+                        <a href="#" class="ms-3">Privacy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright section -->
+            <!-- <div class="row mt-3">
+                <div class="col-md-6">
+                    <span class="copyright">© 2025 Sync Space Inc.</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Manage cookies</a>
+                    <a href="#" class="ms-3">Legal</a>
+                    <a href="#" class="ms-3">Privacy</a>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
