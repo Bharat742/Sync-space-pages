@@ -556,26 +556,31 @@ body {
 }
 
 .FAQ .accordion-item {
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   border-radius: 8px !important;
   margin-bottom: 15px;
   overflow: hidden;
-  border: 1px solid #000;
-  padding: 0px 5px 0px 5px;
+  /* border: 1px solid #000; */
+  /* padding: 0px 5px 0px 5px; */
+  border-radius: unset !important;
 }
 
 .FAQ .accordion-button {
   font-weight: 500;
   font-size: 1.1rem;
   color: #0a2533;
-  background-color: #fff;
-  padding: 20px 25px;
+  background-color: #ddd;
+  /* padding: 20px 25px; */
   box-shadow: none !important;
+  border-radius: 5px;
 }
 
 .FAQ .accordion-button:not(.collapsed) {
   color: #0a2533;
-  background-color: #fff;
+  background-color: #ddd;
+}
+.FAQ .accordion-item{
+  background-color: #ddd;
 }
 
 .FAQ .accordion-button:focus {
@@ -586,10 +591,14 @@ body {
 .FAQ .accordion-body {
   padding: 5px 25px 25px;
   line-height: 1.6;
+  border: 1px solid #000;
+  border-top: none;
+  border-radius: 5px;
 }
 
 .FAQ .accordion-header{
-  border-top: 1px solid #000;
+  border: 1px solid #000;
+  border-radius: 5px ;
 }
 
 /* Custom plus/minus icons */
