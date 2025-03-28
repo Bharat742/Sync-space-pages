@@ -13,227 +13,10 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        /* Background pattern */
-        .bg-pattern {
-            position: absolute;
-            top: 20%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='smallGrid' width='10' height='10' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 10 0 L 0 0 0 10' fill='none' stroke='%23e0e0e0' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23smallGrid)'/%3E%3C/svg%3E"); */
-            /* background-image: url("https://www.vectara.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2b91b097eb379dccde97ca1b554fef30.svg&w=3840&q=75"); */
-            background-image: url("./images/background-img.svg");
-            opacity: 0.8;
-            z-index: -1;
-            background-repeat: no-repeat;
-        }
-
-        .integrations-section {
-            /* padding: 60px 0; */
-            position: relative;
-        }
-
-        .logo-container {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .logo {
-            width: 60px;
-            height: 60px;
-            background-color: #4169e1;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-        }
-
-        .page-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .page-description {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 10px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .learn-more {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .learn-more a {
-            color: #4169e1;
-            text-decoration: none;
-        }
-
-        .learn-more a:hover {
-            text-decoration: underline;
-        }
-
-        .filter-section {
-            margin-bottom: 30px;
-        }
-
-        .filter-label {
-            font-size: 0.9rem;
-            margin-right: 10px;
-            color: #555;
-        }
-
-        .filter-select {
-            padding: 5px 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            min-width: 120px;
-        }
-
-        .integration-card {
-            background-color: white;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            height: 100%;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .integration-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-        }
-
-        .app-logo {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        .app-name {
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: #000;
-        }
-
-        .app-description {
-            color: #555;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .tag {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-right: 5px;
-            margin-bottom: 5px;
-        }
-
-        .tag-orchestration {
-            background-color: #ffebee;
-            color: #f44336;
-        }
-
-        .tag-lowcode {
-            background-color: #e8f5e9;
-            color: #4caf50;
-        }
-
-        .tag-ingest {
-            background-color: #e3f2fd;
-            color: #2196f3;
-        }
-
-        /* App-specific logo colors */
-        .logo-langchain {
-            background-color: #000;
-        }
-
-        .logo-llamaindex {
-            background-color: #0077b6;
-        }
-
-        .logo-flowise {
-            background-color: #5e35b1;
-        }
-
-        .logo-langflow {
-            background-color: #4caf50;
-        }
-
-        .logo-datavolo {
-            background-color: #00bcd4;
-        }
-
-        .logo-airbyte {
-            background-color: #7b1fa2;
-        }
-
-        .logo-unstructured {
-            background-color: #00bcd4;
-        }
-
-        @media (max-width: 767px) {
-            .page-title {
-                font-size: 2rem;
-            }
-
-            .integration-card {
-                margin-bottom: 20px;
-            }
-        }
-
-        /* ================= */
-        .border-box {
-    position: relative;
-    display: inline-block;
-    padding: 40px;
-  }
-
-  .border-box::before,
-  .border-box::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(181deg, transparent, #D4D6DD, transparent);
-    left: 0;
-  }
-
-  .border-box::before { top: 25px; }
-  .border-box::after { bottom: 25px; }
-
-  .border-box .vertical-line {
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #D4D6DD, transparent);
-    top: 0;
-  } 
-  .left-line { left: 25px; }
-  .right-line { right: 25px; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -321,13 +104,7 @@
         <div class="container">
             <!-- Logo and Title -->
             <div class="logo-container">
-                <div class="logo">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 11 4.5h2.05a.5.5 0 0 1 .5.5v2.05a.5.5 0 0 1-.5.5H12v1h1.05a.5.5 0 0 1 .5.5v2.05a.5.5 0 0 1-.5.5H11v1.5a.5.5 0 0 1-1 0V11h-1v1.5a.5.5 0 0 1-1 0V11h-1v1.5a.5.5 0 0 1-1 0V11A2.5 2.5 0 0 1 4.5 8.5H2.05a.5.5 0 0 1-.5-.5V5.95a.5.5 0 0 1 .5-.5H4v-1H2.05a.5.5 0 0 1-.5-.5V2.05a.5.5 0 0 1 .5-.5H4.5A2.5 2.5 0 0 1 7 0zm4.5 5.5a.5.5 0 0 0-.5.5v1.05a.5.5 0 0 0 .5.5H11v-2zM5.5 7H4.5a.5.5 0 0 0-.5.5v1.05a.5.5 0 0 0 .5.5H5.5zm0-2H4.5a.5.5 0 0 0-.5.5v1.05a.5.5 0 0 0 .5.5H5.5z" />
-                    </svg> -->
-                    <!-- <img src="./images/app-logo.svg" alt="app-logo"> -->
+                <div class="logo"> 
                     <div class="border-box">
                         <div class="vertical-line left-line"></div>
                         <div class="vertical-line right-line"></div>
@@ -478,73 +255,25 @@
                 <div class="col-md-4 mb-4">
                     <ul>
                         <li>
-                            <a href="./cancellation&refund.html">Cancellation and Refund</a>
+                            <a href="./cancellation&refund.html"><span>Cancellation and Refund</span></a>
                         </li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#"><span>Privacy Policy</span></a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <ul>
-                        <li><a href="./term&condition.html">Terms and Conditions</a></li>
+                        <li><a href="./term&condition.html"><span>Terms and Conditions</span></a></li>
                         <li>
-                            <a href="./shipping&delivery.html">Shipping and Delivery</a>
+                            <a href="./shipping&delivery.html"><span>Shipping and Delivery</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"><span>Contact Us</span></a></li>
                     </ul>
-                </div>
-
-                <!-- <div class="col-md-2 mb-4">
-                    <h5>Popular apps</h5>
-                    <ul>
-                        <li><a href="#">Dropbox</a></li>
-                        <li><a href="#">Google Sheets</a></li>
-                        <li><a href="#">DocuSign</a></li>
-                        <li><a href="#">WordPress</a></li>
-                        <li><a href="#">Office 365</a></li>
-                        <li><a href="#" class="show-more">Show more</a></li>
-                    </ul>
-                </div> -->
-
-                <!-- <div class="col-md-2 mb-4">
-                    <h5>Trending apps</h5>
-                    <ul>
-                        <li><a href="#">Twitch</a></li>
-                        <li><a href="#">Calendly</a></li>
-                        <li><a href="#">Microsoft To-Do</a></li>
-                        <li><a href="#">Microsoft Outlook</a></li>
-                        <li><a href="#">Medium</a></li>
-                        <li><a href="#" class="show-more">Show more</a></li>
-                    </ul>
-                </div> -->
-
-                <!-- <div class="col-md-3 mb-4">
-                    <h5>Top apps by category</h5>
-                    <ul>
-                        <li><a href="#">Project management</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">CRM</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#" class="show-more">Show more</a></li>
-                    </ul>
-                </div> -->
-
-                <!-- <div class="col-md-3 mb-4">
-                    <h5>Our best content</h5>
-                    <ul>
-                        <li><a href="#">Best Video Conferencing Apps</a></li>
-                        <li><a href="#">Best Email Apps</a></li>
-                        <li><a href="#">Best CRM Apps</a></li>
-                        <li><a href="#">Best Note Taking Apps</a></li>
-                        <li><a href="#">Best Calendar Apps</a></li>
-                        <li><a href="#" class="show-more">Show more</a></li>
-                    </ul>
-                </div> -->
+                </div> 
             </div>
 
             <!-- Social media section -->
@@ -564,11 +293,11 @@
 
             <!-- Bottom navigation and logo -->
             <div class="row bottom-nav">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="https://technians.com/wp-content/uploads/2021/09/main-logo.webp" alt="logo"
                         style="width: 120px; height: auto" />
                 </div>
-                <div class="col-md-8 text-md-end">
+                <div class="col-md-10 text-md-end">
                     <a href="#">Pricing</a>
                     <a href="#">Help</a>
                     <a href="#">Developer Platform</a>
@@ -577,35 +306,22 @@
                     <a href="#">Enterprise</a>
                     <a href="#">Templates</a>
                     <a href="#">App Integrations</a>
-                    <div class="mt-2x">
-                        <span class="copyright me-4">© 2025 Sync Space Inc.</span>
+                    <div class="mt-2">
                         <a href="#">Manage cookies</a>
                         <a href="#" class="ms-3">Legal</a>
                         <a href="#" class="ms-3">Privacy</a>
+                        <span class="copyright ms-4">© 2025 Sync Space Inc.</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Copyright section -->
-            <!-- <div class="row mt-3">
-                <div class="col-md-6">
-                    <span class="copyright">© 2025 Sync Space Inc.</span>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#">Manage cookies</a>
-                    <a href="#" class="ms-3">Legal</a>
-                    <a href="#" class="ms-3">Privacy</a>
-                </div>
-            </div> -->
+ 
         </div>
     </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
 
 </body>
 
